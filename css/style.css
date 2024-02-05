@@ -465,10 +465,85 @@ span{
 }
 
 @media (max-width: 1200px) {
-  html {
-    font-size: 55%;
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%; /* Adjusted padding for better responsiveness */
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5rem 1rem rgba(0, 193, 227, 0.785);
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  .home{
+    flex-direction: column;
+  }
+
+  .home-content h3{
+    font-size: 3rem;
+
+  }
+
+  .home-content h3{
+    font-size: 5rem;
+  }
+
+  .home-img {
+    width: 50%; /* Adjust the percentage based on your preference */
+    margin-top: 4rem;
+    display: block;
+    margin-left: 100;
+    margin-right: 100;
+}
+.home-img img {
+  width: 100%; /* Adjusted width to take the full width of its container */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  height: auto; /* Allowing the height to adjust proportionally */
+  border-radius: 1%;
+  transform: scale(1);
+  opacity: 1;
+  transition: filter 0.7s ease; /* Added transition for smooth effect */
+}
+
+
+
+  .about{
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .about img {
+    width:70vw;
+    margin-top: 4rem;
+
+  }
+
+  .skills h2{
+    margin-bottom: 3rem;
+  }
+
+  .Project h2{
+    margin-bottom: 3rem;
+  }
+
+  .Project-container {
+    grid-template-columns: repeat(1,1fr) ;
   }
 }
+
 
 @media (max-width: 900px) {
   html {
